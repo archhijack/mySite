@@ -983,13 +983,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 1;
 }
 
-#contact .info ion-icon {
-  font-size: 32px;
-  color: #e3cf5b;
-  float: left;
-  line-height: 1;
-}
-
 #contact .info p {
   padding: 0 0 10px 42px;
   line-height: 28px;
