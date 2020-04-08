@@ -185,8 +185,22 @@ window.onload = function() {
   css.type = "text/css";
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
-};
 
+  //Change Theme
+function swapStyleSheet(sheet) {
+    document.getElementById("pageStyle").setAttribute("href", sheet);
+}
+
+function initate() {
+    var style1 = document.getElementById("changeDark");
+    var style2 = document.getElementById("changeLight");
+
+    style1.onclick = swapStyleSheet("../css/style.css");
+    style2.onclick = swapStyleSheet("../css/style2.css");
+}
+
+
+};
 
 
 
