@@ -991,6 +991,45 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #ffffff;
 }
 
+#contact button[id="changeDark"] {
+  background: #000000;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 8px 30px;
+  color: #e3cf5b;
+  border-color: #e3cf5b;
+  margin-top: 5px;
+}
+
+#contact button[id="changeDark"]:hover {
+  cursor: pointer;
+  background: #e3cf5b;
+  color: #000000;
+  border-color: #000000;
+}
+
+#contact button[id="changeLight"] {
+  background: #e3cf5b;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 8px 30px;
+  color: #000000;
+  margin-top: 5px;
+}
+
+#contact button[id="changeLight"]:hover {
+  cursor: pointer;
+  background: #000000;
+  color: #e3cf5b;
+  border-color: #e3cf5b;
+}
+
+@media (max-width: 768px) {
+  #contact .form input[name="name"] {
+    margin-top: 15px;
+  }
+}
+
 #contact .form #sendmessage {
   color: #665EFF;
   border: 1px solid #665EFF;

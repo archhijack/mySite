@@ -185,24 +185,27 @@ window.onload = function() {
   css.type = "text/css";
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
-
-  //Change Theme
-function swapStyleSheet(sheet) {
-    document.getElementById("pageStyle").setAttribute("href", sheet);
-}
-
-function initate() {
-    var style1 = document.getElementById("changeDark");
-    var style2 = document.getElementById("changeLight");
-
-    style1.onclick = swapStyleSheet("../css/style.css");
-    style2.onclick = swapStyleSheet("../css/style2.css");
-}
-
-
 };
 
-
+/*// Check browser support
+if (typeof(Storage) !== "undefined") {
+  // Store
+  var sheet=document.getElementById("pageStyle").getAttribute("href");
+  localStorage.setItem("csheet", sheet);
+  var logosrc=document.getElementById("logosrc").getAttribute("src");
+  localStorage.setItem("lsrc", logosrc);
+  var imgsrc1=document.getElementById("imgsrc1").getAttribute("src");
+  localStorage.setItem("isrc1", imgsrc1);
+  var imgsrc2=document.getElementById("pageStyle").getAttribute("src");
+  localStorage.setItem("isrc2", imgsrc2);
+  // Retrieve
+  document.getElementById("pageStyle").innerHTML = localStorage.getItem("csheet");
+  document.getElementById("logosrc").innerHTML = localStorage.getItem("lsrc");
+  document.getElementById("imgsrc1").innerHTML = localStorage.getItem("isrc1");
+  document.getElementById("imgsrc2").innerHTML = localStorage.getItem("isrc2");
+} else {
+  //document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}*/
 
 
 

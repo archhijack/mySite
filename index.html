@@ -33,7 +33,17 @@
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link id="pageStyle" href="css/style.css" rel="stylesheet">
+  <link id="pageStyle" href="css/style.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    function swapStyleSheet(sheet,isrc)
+    {
+      document.getElementById('pageStyle').setAttribute('href',sheet);
+      document.getElementById('logosrc').setAttribute('src',isrc);
+      document.getElementById('imgsrc1').setAttribute('src',isrc);
+      document.getElementById('imgsrc2').setAttribute('src',isrc);
+    }
+  </script>
 
 </head>
 
@@ -48,7 +58,7 @@
       <div id="logo" class="pull-left">
         <!--<h1><a href="#intro" class="scrollto">Archisman</a></h1>-->
         <!-- Uncomment above if you prefer to use an text logo -->
-         <a href="#intro"><img src="img/myLogoNoBack.png" width="300" height="50" alt="" title=""></a>
+         <a href="#intro"><img id="logosrc" src="img/myLogoNoBack.png" width="300" height="50" alt="" title=""></a>
       </div>
 
       <nav id="nav-menu-container">
@@ -70,7 +80,7 @@
   <section id="intro">
 
     <div class="intro-text">
-      <img src="./img/myLogoNoBack2.png" class="responsive">
+      <img id="imgsrc1" src="img/myLogoNoBack.png" class="responsive">
       <h2>
         Hello
         <span
@@ -322,7 +332,7 @@
 
           <div class="col-lg-4 col-md-4">
             <div class="contact-about">
-              <img src="./img/myLogoNoBack.png" width="300" height="50"></img>
+              <img id="imgsrc2" src="img/myLogoNoBack.png" width="300" height="50"></img>
               <div class="social-links">
                 <a href="https://github.com/archhijack" class="github"><i class="fa fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/archisman-bhattacharya/" class="linkedin"><i class="fa fa-linkedin"></i></a>
@@ -354,8 +364,8 @@
                 <p>archisman_bhattacharya<br>@hotmail.com</p>
               </div>
 
-              <!--<div class="text-center"><button id="changeDark" title="Dark Theme" onclick="initiate();">Dark Theme</button></div>
-              <div class="text-center"><button id="changeLight" title="Light Theme" onclick="initiate();">Light Theme</button></div>-->
+              <div class="text-center"><button id="changeDark" title="Dark Theme" onclick="swapStyleSheet('css/style.css','img/myLogoNoBack.png');">Dark Theme</button></div>
+              <div class="text-center"><button id="changeLight" title="Light Theme" onclick="swapStyleSheet('css/style2.css','img/myLogoNoBack2.png');">Light Theme</button></div>
 
 
             </div>
@@ -448,9 +458,6 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
-  <!-- Cookie Bubble JS -->
-  <script src="https://unpkg.com/jquery-cookie-bubble@1.0.0/dist/cookieBubble.min.js"></script>
 
 
 </body>
