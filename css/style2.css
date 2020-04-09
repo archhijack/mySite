@@ -990,7 +990,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #000000;
 }
 
-#contact button {
+#contact button[id="changeDark"] {
   background: #000000;
   border: 1px solid black;
   border-radius: 20px;
@@ -999,11 +999,33 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-top: 5px;
 }
 
-#contact button:hover {
+#contact button[id="changeDark"]:hover {
   cursor: pointer;
   background: #e3cf5b;
   color: #000000;
   border-color: #000000;
+}
+
+#contact button[id="changeLight"] {
+  background: #e3cf5b;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 8px 30px;
+  color: #000000;
+  margin-top: 5px;
+}
+
+#contact button[id="changeLight"]:hover {
+  cursor: pointer;
+  background: #000000;
+  color: #e3cf5b;
+  border-color: #000000;
+}
+
+@media (max-width: 768px) {
+  #contact .form input[name="name"] {
+    margin-top: 15px;
+  }
 }
 
 #contact .form #sendmessage {
