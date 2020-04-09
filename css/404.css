@@ -32,6 +32,6 @@ p {
 
 @@media (max-width: 768px) {
   .divSpotify{
-    padding-left: 50px;
+    margin-left: 50%;
   }
 }
