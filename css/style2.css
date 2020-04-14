@@ -4,7 +4,7 @@
 body {
   background: #fff;
   color: #e3cf5b;
-  font-family: "Spectral SC";
+  font-family: "Spectral";
   overflow-x: hidden;
 }
 
@@ -33,7 +33,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Spectral SC";
+  font-family: "Spectral";
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -159,6 +159,7 @@ img.responsive { width: 450px; }
 img.responsive { height: auto; }
 
 #intro h2 {
+  font-family: "Spectral SC";
   margin: 30px 0 10px 0;
   padding: 0 15px;
   font-size: 48px;
@@ -513,6 +514,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Sections Header
 --------------------------------*/
 .section-header .section-title {
+  font-family: "Spectral SC";
   font-size: 32px;
   color: #000000;
   text-align: center;
@@ -935,13 +937,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .contact-about p {
   font-size: 14px;
   line-height: 24px;
-  font-family: "Spectral SC";
+  font-family: "Spectral";
   color: #888;
 }
 
 #contact .contact-about h6 {
   font-size: 11px;
-  font-family: "Spectral SC";
+  font-family: "Spectral";
   line-height: 10px;
   color: #000000;
 }
