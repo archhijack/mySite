@@ -92,7 +92,7 @@ jQuery(document).ready(function($) {
     else var str = $(this).serialize();
     var action = $(this).attr('action');
     if( ! action ) {
-      action = 'https://us-central1-my-site-61f2b.cloudfunctions.net/mySiteFunc';
+      action = 'ENTER YOUR CLOUD FUNCTIONS URL'; // ENTER YOUR GOOGLE CLOUD FUNCTIONS URL HERE.
     }
     $.ajax({
       type: "POST",
