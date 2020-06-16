@@ -1,5 +1,9 @@
 # This is my website template. Feel free to use it. :-)
 
+Visit my website for a live demo. ```https://archisman.neocities.org```
+
+NOTE: This template does not contain the blogs template.
+
 ## Rules
 
 - Do not remove `Designed by Archisman Bhattacharya` from the footer.
